@@ -15,7 +15,9 @@ service "jupyter-notebook" created
 $
 ```
 
-Once the image is downloaded and started, the notebook server should start.
+Once the image is downloaded and started, the notebook server should start [cluster_ip:32768](http://127.0.0.1:32768/tree?).
+
+![](img/jupyter.png)
 
 ```bash
 $ kubectl logs -f pod/jupyter-notebook-79d56d8b85-b8jl7
