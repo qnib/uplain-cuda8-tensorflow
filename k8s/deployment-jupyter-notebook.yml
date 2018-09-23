@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: minimal-notebook
-        image: qnib/uplain-cuda8-tensorflow
+        image: qnib/uplain-cuda8-tensorflow:1.4-0
         ports:
         - containerPort: 8888
         resources:
