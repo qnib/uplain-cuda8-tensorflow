@@ -104,5 +104,6 @@ COPY bin/start_jupyter.sh /
 COPY ./notebooks /notebooks/basic
 RUN git clone https://github.com/aymericdamien/TensorFlow-Examples.git /tmp/notebooks \
  && mv /tmp/notebooks/notebooks /notebooks/advanced
+RUN pip install opencv-python keras tqdm
 
-CMD ["/start_jupyter.sh"]
+CMD ["/start_jupyter.sh","--notebook-dir", "/notebooks", "--NotebookApp.token=''"]
